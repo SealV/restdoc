@@ -1,0 +1,15 @@
+= 用 Spring REST Docs 构建文档
+
+This is an example output for a service running at http://localhost:8080:
+
+.request
+include::{snippets}/greeting/http-request.adoc[]
+
+.response
+include::{snippets}/greeting/http-response.adoc[]
+
+.request
+include::{snippets}/book/http-request.adoc[]
+
+.response
+include::{snippets}/book/http-response.adoc[]
