@@ -9,6 +9,19 @@ Jdk 1.8
 maven 3.0+
 idea
 创建工程
+@AutoConfigureRestDocs注解开启了生成snippets文件,通过单元测试和一些简单的配置就能够得到api文档了,target文件下生成了一个snippets文件夹,其目录结构如下：
+└── target
+    └── snippets
+        └── home
+            └── httpie-request.adoc
+            └── curl-request.adoc
+            └── http-request.adoc
+            └── http-response.adoc
+            
+创建一个新文件src/main/asciidoc/index.adoc
+需要使用asciidoctor-maven-plugin插件,通过mvnw package命令就可以生成文档了,/target/generated-docs下有个index.html
+
+
 
 引入依赖，其pom文件：
 
